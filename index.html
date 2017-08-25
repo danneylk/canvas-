@@ -1,0 +1,76 @@
+<!doctype html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>pigai</title>
+	<link rel="stylesheet" type="text/css" href="css/common-qt.css"/>
+	<link rel="stylesheet" type="text/css" href="css/dpy.css"/>
+</head>
+<body>
+		<div id="pigai">
+			<span class="close">
+				<img src="images/u20.png" />
+			</span>
+			<div id="parent">
+				<!-- 这里添加一个img标签用于存放图片，后续取图片宽高需要用到 -->
+			</div>
+			<div class="top">
+				<span class="icon-bar icon_xuanzhaun" id="rotate"  onclick="rotate()"  title="旋转"/></span>
+				<span class="icon-bar icon_move active" id="move"  title="拖动"  ></span>
+				<span class="icon-bar icon_gangbi" id="draw"  title="画笔"></span>
+				<span class="icon-bar icon_color" id="color"  title="颜色选择">
+					<ul class="clear chosecolorname">
+						<!--<span  class="closecolor">关闭</span>-->
+						<li class="red"     data="#ff0000"></li>
+						<li class="orange"  data="#ffcc00"></li>
+						<li class="yellow"  data="#ffff00"></li>
+						<li class="green"   data="#99ff00"></li>
+						<li class="blueone" data="#79e4ff"></li>
+						<li class="blue"    data="#1199ff"></li>
+					</ul>
+				</span>
+				<span class="icon-bar icon_dui" id="dui"  title="正确" ></span>
+				<span class="icon-bar icon_bandui" id="bandui"  title="半对" /></span>
+				<span class="icon-bar icon_cuo" id="cuo" title="错"></span>
+				<span class="icon-bar icon_xiangpi" id="eraser"  title="橡皮擦" ></span>
+				<span class="icon-bar icon_clearall" id="clear"  title="还原" ></span>
+				<span class="icon-bar icon_ok" id="imgurl"  title="保存图片"></span>
+			</div>
+			<div id="div1"></div>
+		</div>
+		
+		
+		
+		
+		<div class="odiv">
+			<img src="images/u20.png" />
+			<span class="opencanvans">批改</span>
+		</div>
+		<div class="odiv">
+			<img src="http://192.168.6.100:8082/group6/M00/35/C4/wKgG0Vmc9iuAeV2-AAJtGVycU18728.jpg?rotate=0" />
+			<span class="opencanvans">批改</span>
+		</div>
+		<div  class="odiv">
+			<img src="images/1200900.jpg" />
+			<span class="opencanvans">批改</span>
+		</div>
+		<div id="html" style="width: 800px;">
+			图片容器
+		</div>
+		
+		
+		
+		<script src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="http://yftest.wdsource.wdcloud.cc/js/jquery.nicescroll.js"></script>
+		<script src="js/e-smart-zoom-jquery.min.js"></script>
+		<script src="js/pigai-v3.js"></script>
+		<div style="clear:both"></div>
+	</body>
+	
+	<script>
+		function base64back(reg){
+			console.log(reg)
+		}
+	</script>
+
+	</html>
